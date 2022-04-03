@@ -25,8 +25,8 @@ Dockerfile : you will find it -->
 1- clone the project 
 2- create .env file as shown in examples in config 
 3- in the terminal : cd to the location of the folder 
-4- in the terminal : docker build -t server . 
-5- in the terminal : docker run -p 3000:3000 server
+4- in the terminal : docker build -t codescalers . 
+5- in the terminal : docker run -p 3000:3000 codescalers
 6- open http://localhost:3000/
 
 Docker-Compose : Same for dockerfile but in terminal write : docker-compose up
