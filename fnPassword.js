@@ -21,17 +21,17 @@ const functions = {
     },
 
     getpassword: async () => {
-        const password = await axios.get('http://localhost:3000/api/passwords/saleh');
+        const password = await axios.get('http://localhost:3000/api/passwords/624a273e3741cbf43bf8800a');
         return password;
     },
 
     deletepassword: async () => {
-        const password = await axios.delete('http://localhost:3000/api/passwords/saleh');
+        const password = await axios.delete('http://localhost:3000/api/passwords/624a273e3741cbf43bf8800a');
         return password;
     },
 
     updatepassword: async () => {
-        const password = await axios.put('http://localhost:3000/api/passwords/saleh', {
+        const password = await axios.put('http://localhost:3000/api/passwords/624a273e3741cbf43bf8800a', {
             username: "rawdaGastan",
         });
         return password;
