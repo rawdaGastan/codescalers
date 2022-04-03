@@ -1,0 +1,19 @@
+version: "3"
+services:
+  app:
+    container_name: express-mongo
+    build: .
+    ports:
+      - 3000:3000
+    links:
+      - mongo
+  mongo:
+    container_name: mongo
+    image: mongo
+    environment:
+      - PORT=7000
+      - MONGO_DNS_SRV="mongodb+srv://"
+      - MONGO_AUTH="rawdaGastan:test"
+      - MONGO_CLUSTER="@cluster0.1fxx3.mongodb.net/"
+      - MONGO_DB_NAME=myFirstDatabase  
+      - MONGO_OPTIONS="?retryWrites=true&w=majority"
